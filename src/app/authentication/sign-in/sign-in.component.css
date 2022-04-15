@@ -1,0 +1,12 @@
+
+.sign-in-btn{
+    background-color: #bdd438;
+    border-radius: 22px;
+    width: 12rem;
+    color: white;
+    padding: 3px;
+}
+.sign-up-link{
+    font-size: 1.3rem;
+    color: #bdd438;
+}

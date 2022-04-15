@@ -1,0 +1,31 @@
+{
+    "navbar": {
+        "personal": "Personal",
+        "business": "Business",
+        "palnsAndServices": "Plans and Services",
+        "shop":"Shop",
+        "help":"Help",
+        "search": "Search",
+        "plans": "Plans",
+        "superConnect":"Super Connect",
+        "services":"Services",
+        "entertainment":"Entertainment",
+        "quickPay":"Quick Pay",
+        "feedback":"Feedback",
+        "stores":"Stores",
+        "switchBusiness":"Switch To Business"
+    },
+    "authentication":{
+        "signup":"Sign Up",
+        "signin":"Sign In",
+        "email":"Email",
+        "password":"Password",
+        "confirmPassword":"Confirm Password",
+        "notRegistered":"Not Registered Yet?"
+    },
+    "homePage":{
+        "ramadanOffer":"Ramadan Offer 'Akwa Forsa Menu' from Akwa Kart",
+        "ramadanOfferDetails":"Etisalat is now offering you Menu Akwa Forsa from Akwa Kart! Dial *011# and recharge Akwa Kart to enjoy & choose your own gift from Menu Akwa Forsa, such as, Akwa Mix, Akwa Social, Akwa Streaming, Akwa Voice & Akwa Internet.",
+        "details":"Details"
+    }
+}

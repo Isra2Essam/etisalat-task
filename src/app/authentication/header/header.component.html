@@ -1,0 +1,48 @@
+<header class="header bg-dark">
+    <div class="container d-flex justify-content-between p-2">
+  
+      <div class="text-white">
+        <button mat-button class="h-100">{{'navbar.personal' | translate}}</button>
+        <button mat-button class="h-100">{{'navbar.business' | translate}}</button>
+      </div>
+      <div>
+        <button mat-stroked-button class="lang-btn" (click)="onLanguageCick(language)">{{language}}</button>
+        <button mat-button class="text-white">My Etisalat</button>
+      </div>
+    </div>
+  
+  </header>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white bottom-border">
+    <div class="container ">
+      <div class="logo navbar-brand">
+        <img src="../../../assets/images/logo.png">
+      </div>
+      <button class="navbar-toggler" type="button"  (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed"  >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link text-nowrap" href="#">{{'navbar.palnsAndServices' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{'navbar.shop' | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">{{'navbar.help' | translate}}</a>
+          </li>
+  
+        </ul>
+        <form class="form-inline my-2 my-lg-0 actions">
+          <div class="search rounded d-flex justify-content-between align-items-center">
+            <input placeholder="{{'navbar.search' | translate}}">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="cart rounded">
+            <i class="fa fa-shopping-cart"></i>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="container d-flex justify-content-center p-3">
+  <div class="sign-in-container rounded shadow-sm">
+
+    <form [formGroup]="signupForm" [dir]="textDir" (ngSubmit)="onSubmit()">
+      <h1>{{'authentication.signup' | translate}}</h1>
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>{{'authentication.email' | translate}}</mat-label>
+        <input matInput formControlName="email" required>
+        <button mat-icon-button matSuffix>
+          <mat-icon>face</mat-icon>
+        </button>
+        <mat-error *ngIf="signupForm.get('email')?.invalid&&signupForm.get('email')?.touched">{{getErrorMessage()}}
+        </mat-error>
+
+      </mat-form-field>
+
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>{{'authentication.password' | translate}}</mat-label>
+        <input matInput formControlName="password" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="signupForm.get('password')?.invalid&&signupForm.get('password')?.touched">
+          {{getErrorMessage()}}</mat-error>
+
+      </mat-form-field>
+      <div class="d-flex pt-3">
+        <button class="sign-up-btn p-1 w-100" [disabled]="signupForm.invalid" mat-flat-button
+          type="submit">{{'authentication.signup' | translate}}</button>
+      </div>
+    </form>
+  </div>
+</div>
