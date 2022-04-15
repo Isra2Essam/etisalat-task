@@ -10,3 +10,5 @@ Features to iplement in the future
 -Profile
 -Details
 -CSS Effects
+-Add Font
+-Use backend APIS to get data

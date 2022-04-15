@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunketisalat_home_page=self.webpackChunketisalat_home_page||[]).push([[507],{7507:(M,a,o)=>{o.r(a),o.d(a,{HomePageModule:()=>n});var l=o(9808),m=o(7601),u=o(5402),_=o(5e3);let n=(()=>{class e{}return e.\u0275fac=function(E){return new(E||e)},e.\u0275mod=_.oAB({type:e}),e.\u0275inj=_.cJS({imports:[[l.ez,m.a,u.I]]}),e})()}}]);
