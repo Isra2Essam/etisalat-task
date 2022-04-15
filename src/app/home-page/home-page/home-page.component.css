@@ -1,0 +1,234 @@
+header {
+    background: black;
+}
+
+.content-list {
+    column-gap: 20px;
+    list-style: none;
+}
+
+.header-container,
+.container {
+    padding-inline: 55px;
+}
+
+.content-list li {
+    cursor: pointer;
+    border-inline-end: 1px solid #373737;
+}
+
+nav {
+    background-color: rgba(9, 20, 7, 0.5) !important;
+}
+
+.nav-link {
+    color: rgb(251 251 248) !important;
+}
+
+.logo {
+    padding: 3px 3px 3px 0px;
+    margin-inline-end: 10px;
+}
+
+.logo a {
+    font-size: 25px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+ul.pay-list li:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+.nav-item a {
+    font-size: 20px;
+}
+
+.pay-list {
+    column-gap: 12px;
+}
+
+.pay-list li a:hover {
+    color: #6ea000 !important;
+}
+
+.cover-image {
+    background: linear-gradient(to bottom, transparent 0%, black 100%), url('../../../assets/images/offer-banner-ar.png');
+    min-height: 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-on-cover h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e8df48;
+    font-size: 3rem;
+    line-height: normal;
+}
+
+.title-on-cover p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 25px;
+}
+
+.title-on-cover button {
+    color: white;
+    border: 1px solid;
+    padding: 3px 7rem;
+    font-size: 18px;
+}
+
+.title-on-cover button:hover {
+    background-color: #598822 !important;
+}
+
+.thumbnails {
+    list-style: none;
+    column-gap: 10px;
+}
+
+.thumbnails .thumbnail-item {
+    width: 8rem;
+    height: 6rem;
+
+    border: 5px solid white;
+}
+
+ul.thumbnails {
+    justify-content: end;
+    vertical-align: bottom;
+    margin-top: 18rem;
+}
+
+.features i {
+    color: #539d7c;
+    padding: 15px;
+    border: 1px solid #b0cc9a;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.features .icon-container {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.features .icon-container span {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.features .icon-container span:hover {
+    color: #598822;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+
+}
+
+.plans h3 {
+    color: #676766;
+}
+
+.plans .right-image-container,
+.plans .left-image-container,
+.plans .left-image-container-sec,
+.plans .right-image-container-sec {
+    width: 16rem;
+    height: 19rem;
+}
+
+.plans .left-image-container {
+    border-right: 8px solid black;
+
+}
+
+.plans .right-image-container,
+.plans .right-image-container-sec {
+    border-left: 8px solid #1c6d5e;
+    margin-left: auto;
+
+}
+
+.plans .left-image-container-sec {
+    border-right: 8px solid #c0d530;
+
+}
+
+.plans .right-image-container-sec {
+    border-left: 8px solid #337d2d;
+
+}
+
+.plans .right-image-container img,
+.plans .right-image-container-sec img {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.plans .left-image-container img,
+.plans .left-image-container-sec img {
+    border-radius: 10px 0px 0px 0px;
+}
+
+.plans-txt {
+    width: 60%;
+}
+
+.green-colored-header {
+    color: #6ea006;
+}
+
+footer {
+    background-color: #091407;
+}
+
+footer .footer-logo img {
+    width: 12rem;
+}
+
+.header-animation {
+    height: 3rem;
+    max-height: 3rem;
+    white-space: nowrap;
+    animation: mymove 1s ease-in !important;
+}
+
+.header-animation li {
+    border-inline-end: none !important;
+}
+
+@keyframes mymove {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container .navbar-collapse {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .plans .plan-card{
+        flex-direction: column;
+    }
+}

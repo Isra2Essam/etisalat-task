@@ -1,0 +1,257 @@
+<header class="p-2" [ngClass]="isScrolled ? 'header-animation' : ''">
+    <div class="container header-container">
+        <div class="d-flex justify-content-between text-white align-items-center">
+            <div>
+                <h3 class="m-0 font-weight-bold">{{'navbar.switchBusiness' | translate}}</h3>
+            </div>
+            <div>
+                <ul class="d-flex content-list  m-0">
+                    <li class=""><i class="fa fa-envelope me-1"></i><span class="me-2"> {{'navbar.feedback' |
+                            translate}}</span></li>
+                    <li class=""><i class="fa fa-map-marker me-1"></i><span class="me-2">{{'navbar.stores' |
+                            translate}}</span></li>
+                    <li class="" (click)="onLanguageCick(language)"><i class="fa fa-globe me-1"></i><span
+                            class="me-2">{{language}}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="cover-image">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light sticky-top">
+        <div class="container">
+            <div class="navbar-brand mb-1">
+
+                <img src="../../../assets/images/etisalat-logo-icon.png" width="110px" alt="">
+            </div>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent"
+                (click)="isCollapsed = !isCollapsed">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div [ngbCollapse]="isCollapsed" class="collapse navbar-collapse justify-content-between">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{'navbar.plans' | translate}}
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{'navbar.superConnect' | translate}}
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+                            {{'navbar.services' | translate}}
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            {{'navbar.entertainment' | translate}}
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            {{'navbar.shop' | translate}}
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav pay-list ">
+                    <li class="nav-item">
+                        <a class="nav-link">{{'navbar.quickPay' | translate}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container ">
+        <div class="row py-5 title-on-cover">
+            <div class="col-md-6">
+                <h1>{{'homePage.ramadanOffer' | translate}}</h1>
+                <p class="pt-1">
+                    {{'homePage.ramadanOfferDetails' | translate}}
+                </p>
+                <button class="mt-3" mat-stroked-button> {{'homePage.details' | translate}}</button>
+            </div>
+            <div class="col-md-6">
+                <ul class="d-flex thumbnails">
+                    <li class="thumbnail-item"><img src="../../../assets/images/011-offer-L.png" width="100%"
+                            height="100%" alt=""></li>
+                    <li class="thumbnail-item"><img src="../../../assets/images/emerald_banner_Ar.png" width="100%"
+                            height="100%" alt=""></li>
+                    <li class="thumbnail-item"><img src="../../../assets/images/etisalat-cash-banner.png" width="100%"
+                            height="100%" alt=""></li>
+                    <li class="thumbnail-item"><img src="../../../assets/images/switch-to-etisalat-banner.png"
+                            width="100%" height="100%" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+</div>
+<br>
+<div class="container">
+    <div class="row features">
+        <div class="col-lg col-md-4 pb-sm-3">
+            <div class="icon-container">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                <span class="font-weight-bold">Adsl</span>
+            </div>
+        </div>
+        <div class="col-lg col-md-4 pb-sm-3">
+            <div class="icon-container">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                <span class="font-weight-bold">More Program</span>
+            </div>
+        </div>
+        <div class="col-lg col-md-4 pb-sm-3">
+            <div class="icon-container">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                <span class="font-weight-bold">Convert To 4G</span>
+            </div>
+        </div>
+        <div class="col-lg col-md-4 pb-sm-3">
+            <div class="icon-container">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                <span class="font-weight-bold">Track Order</span>
+            </div>
+        </div>
+        <div class="col-lg col-md-4 pb-sm-3">
+            <div class="icon-container">
+                <i class="fa fa-gift fa-3x" aria-hidden="true"></i>
+                <span class="font-weight-bold">Choose Your Number</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container plans mt-4">
+    <div>
+        <h3 class="mb-0 font-weight-bold">Explore</h3>
+        <h1 class="mb-0 font-weight-bold">Our Plans</h1>
+    </div>
+    <div class="pt-2">
+        <div class="row">
+            <div class="col-lg mb-md-5 mb-xl-0">
+                <div class="shadow-sm plan-card rounded-left d-flex ">
+                    <div class="left-image-container h-auto">
+                        <img src="../../../assets//images/emerald_banner_Ar - Copy.png" width="100%" height="100%"
+                            alt="">
+                    </div>
+                    <div class="d-flex justify-content-center flex-column plans-txt p-4">
+                        <h1 class="font-weight-bold">Emerlad</h1>
+                        <p>Beginning From</p>
+                        <h1 class="font-weight-bold green-colored-header">250 EGP/Month</h1>
+                        <p class="pt-1">
+
+                            Welcome to the realm of exclusive privileges where we will provide you with a vast spectrum
+                            of our telecom services & connectivity, with plush benefits that would take your travel and
+                            business experiences to a whole new level.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg ">
+                <div class="shadow-sm plan-card rounded-right d-flex">
+                    <div class="d-flex justify-content-center flex-column plans-txt p-4">
+                        <h1 class="font-weight-bold">Emerlad</h1>
+                        <p>Beginning From</p>
+                        <h1 class="font-weight-bold green-colored-header">250 EGP/Month</h1>
+                        <p class="pt-1">
+
+                            Welcome to the realm of exclusive privileges where we will provide you with a vast spectrum
+                            of our telecom services & connectivity, with plush benefits that would take your travel and
+                            business experiences to a whole new level.
+                        </p>
+                    </div>
+
+                    <div class="right-image-container h-auto">
+                        <img src="../../../assets//images/emerald_banner_Ar - Copy.png" width="100%" height="100%"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row pb-5">
+            <div class="col-lg mb-md-5 mb-xl-0">
+                <div class="shadow-sm plan-card rounded-left d-flex">
+                    <div class="left-image-container-sec h-auto">
+                        <img src="../../../assets//images/emerald_banner_Ar - Copy.png" width="100%" height="100%"
+                            alt="">
+                    </div>
+                    <div class="d-flex justify-content-center flex-column plans-txt p-4">
+                        <h1 class="font-weight-bold">Emerlad</h1>
+                        <p>Beginning From</p>
+                        <h1 class="font-weight-bold green-colored-header">250 EGP/Month</h1>
+                        <p class="pt-1">
+                            Welcome to the realm of exclusive privileges where we will provide you with a vast spectrum
+                            of our telecom services & connectivity, with plush benefits that would take your travel and
+                            business experiences to a whole new level.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg">
+                <div class="shadow-sm plan-card rounded-right d-flex">
+                    <div class="d-flex justify-content-center flex-column plans-txt p-4">
+                        <h1 class="font-weight-bold">Emerlad</h1>
+                        <p>Beginning From</p>
+                        <h1 class="font-weight-bold green-colored-header">250 EGP/Month</h1>
+                        <p class="pt-1">
+
+                            Welcome to the realm of exclusive privileges where we will provide you with a vast spectrum
+                            of our telecom services & connectivity, with plush benefits that would take your travel and
+                            business experiences to a whole new level.
+                        </p>
+                    </div>
+
+                    <div class="right-image-container-sec h-auto">
+                        <img src="../../../assets//images/emerald_banner_Ar - Copy.png" width="100%" height="100%"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="p-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pb-3 footer-logo">
+                <img src="../../../assets/images/etisalat-logo-icon.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <h1>Get To Know Us</h1>
+                <h2>About Us</h2>
+                <h2>Caverage Map</h2>
+                <h2>Vendor Management Office</h2>
+            </div>
+            <div class="col-md-3">
+                <h1>needs Help</h1>
+                <h2>About Us</h2>
+                <h2>Caverage Map</h2>
+                <h2>Vendor Management Office</h2>
+            </div>
+            <div class="col-md-3">
+                <h1>Looking For More?</h1>
+                <h2>About Us</h2>
+                <h2>Caverage Map</h2>
+                <h2>Vendor Management Office</h2>
+            </div>
+        </div>
+
+    </div>
+</footer>
