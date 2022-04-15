@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a,
+button {
+    cursor: pointer !important;
+}
+
+.sign-in-container {
+    padding: 2rem 4rem;
+    height: 30rem;
+    line-height: 6;
+    width: 43%;
+}
+
+
+.rtl .navbar-brand {
+    margin-right: 0rem !important;
+}
+
+.rtl .cover-image {
+    background: linear-gradient(to bottom, transparent 0%, black 100%), url('./assets/images/offer-banner.png') !important;
+    background-size: cover !important;
+}
+
+@media only screen and (max-width: 990px) {
+    .sign-in-container {
+        width: 100%;
+    }
+}
